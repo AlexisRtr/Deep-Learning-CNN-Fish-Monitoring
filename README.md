@@ -13,10 +13,7 @@ The paper about this project was published at AudioMostly21 and is availble here
 Several recordings were recorded and annotated by the MRM association. The annotations contain information about when a bull call occurs, including the start and end times. The data is confidential and has not been published.
 
 As you can see in the graph, the duration of a bull call is quite short, lasting less than 10 seconds.
-
-<div style="width:60px ; height:60px">
 ![Boxplot bull](graphs/Boxplot_par_site_et_annee.png)
-<div>
 
 
 
@@ -35,9 +32,9 @@ As you can see, the data was highly unbalanced, with many segments having no bul
 ### Modeling
 Once our long audio data had been transformed into 47,000 mel-spectrograms associated with labels indicating the presence or absence of bull calls, modeling could begin. Two CNN models, AlexNet and VGG16, were selected. You can check the notebooks and codes to see their architectures. Each model was customized to better suit the data, particularly addressing the unbalanced proportion between "no bull" and "bulls" segments.
 
-
-<div style="width:60px ; height:60px">
 ![models](graphs/model.png)
+<div style="width:60px ; height:60px">
+![unbalanced data](graphs/Barplot_prop_bull_no_bull.png)
 <div>
 
 ### Results
