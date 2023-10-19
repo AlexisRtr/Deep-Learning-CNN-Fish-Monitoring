@@ -23,19 +23,12 @@ The strategy was to divide each of the 20 recordings, totaling 68 hours of audio
 The second step in the preprocessing involved transforming each audio segment into a mel-spectrogram. This mel-spectrogram contained all the frequencies and intensities present in the 15-second audio segment.
 
 As you can see, the data was highly unbalanced, with many segments having no bull calls and very few containing bull calls. 
-
-<div style="width:60px ; height:60px">
-![unbalanced data](graphs/Barplot_prop_bull_no_bull.png)
-<div>
-
+![unbalanceddata](graphs/Barplot_prop_bull_no_bull.png)
 
 ### Modeling
 Once our long audio data had been transformed into 47,000 mel-spectrograms associated with labels indicating the presence or absence of bull calls, modeling could begin. Two CNN models, AlexNet and VGG16, were selected. You can check the notebooks and codes to see their architectures. Each model was customized to better suit the data, particularly addressing the unbalanced proportion between "no bull" and "bulls" segments.
 
-![models](graphs/model.png)
-<div style="width:60px ; height:60px">
 ![unbalanced data](graphs/Barplot_prop_bull_no_bull.png)
-<div>
 
 ### Results
 The average recall was around 90%, which is quite impressive. The primary objective was to identify bull calls, with an emphasis on not missing any bull calls, as all detected bull calls would later be reviewed by fish spawning experts.
