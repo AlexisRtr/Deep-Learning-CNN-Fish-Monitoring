@@ -13,7 +13,7 @@ The paper about this project was published at AudioMostly21 and is availble here
 Several recordings were recorded and annotated by the MRM association. The annotations contain information about when a bull call occurs, including the start and end times. The data is confidential and has not been published.
 
 As you can see in the graph, the duration of a bull call is quite short, lasting less than 10 seconds.
-![Boxplot bull](Boxplot_par_site_et_annee.png)
+![Boxplot bull](graphs/Boxplot_par_site_et_annee.png)
 
 
 
@@ -23,7 +23,10 @@ The strategy was to divide each of the 20 recordings, totaling 68 hours of audio
 The second step in the preprocessing involved transforming each audio segment into a mel-spectrogram. This mel-spectrogram contained all the frequencies and intensities present in the 15-second audio segment.
 
 As you can see, the data was highly unbalanced, with many segments having no bull calls and very few containing bull calls. 
-![unbalanced data](grpahs/Barplot_prop_bull_no_bull.png)
+
+<div style="width:60px ; height:60px">
+![unbalanced data](graphs/Barplot_prop_bull_no_bull.png)
+<div>
 
 
 ### Modeling
