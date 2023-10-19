@@ -5,7 +5,7 @@ Fish migration monitoring from audio detection with CNNs
 
 Research project for IMT Mines Ales with Elie Lambeaux and Thomas Guerin from the promo Data Science and AI. The objective was to monitor fish migration thanks to the specific sound, called "bull", made during the spawning by using deep learning algorithms. The main challenge was dealing with highly unbalanced data
 
-The paper about this project was published at AudioMostly21 and is availble here. [Paper CNNs AM21] (https://www.google.com/url?sa=t&source=web&cd=&ved=2ahUKEwiCpZ-KooOCAxUdhIkEHeZGCsUQFnoECBIQAQ&url=https%3A%2F%2Fimt-mines-ales.hal.science%2Fhal-03330991%2Fdocument&usg=AOvVaw3DDunrR_71MJVEUdG2kTlX&opi=89978449)
+The paper about this project was published at AudioMostly21 and is availble here. [Paper CNNs AM21](https://www.google.com/url?sa=t&source=web&cd=&ved=2ahUKEwiCpZ-KooOCAxUdhIkEHeZGCsUQFnoECBIQAQ&url=https%3A%2F%2Fimt-mines-ales.hal.science%2Fhal-03330991%2Fdocument&usg=AOvVaw3DDunrR_71MJVEUdG2kTlX&opi=89978449)
 
 
 ### Data
@@ -28,7 +28,7 @@ As you can see, the data was highly unbalanced, with many segments having no bul
 ### Modeling
 Once our long audio data had been transformed into 47,000 mel-spectrograms associated with labels indicating the presence or absence of bull calls, modeling could begin. Two CNN models, AlexNet and VGG16, were selected. You can check the notebooks and codes to see their architectures. Each model was customized to better suit the data, particularly addressing the unbalanced proportion between "no bull" and "bulls" segments.
 
-![unbalanced data](graphs/Barplot_prop_bull_no_bull.png)
+![unbalanced data](graphs/models.png)
 
 ### Results
 The average recall was around 90%, which is quite impressive. The primary objective was to identify bull calls, with an emphasis on not missing any bull calls, as all detected bull calls would later be reviewed by fish spawning experts.
